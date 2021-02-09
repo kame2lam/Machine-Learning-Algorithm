@@ -1,18 +1,3 @@
-# 線性回歸分析
-
-預測值 $\hat y=w^T x_i +b$,
-
-損失函數 $L(x)=||\hat y -y||^2_2$
-
-優化方法 $\min\limits_{w,b} ||\hat y-y||^2_2$
-
-$w_新=w_舊-學習率*損失值$
-
-L1范數 $||x||_1=\sum\limits_{i=1}^{n}|x_i|$
-
-L2范數 $||x||_2=\sqrt{\sum\limits_{i=1}^{n}x_i^2}$
-
-```python
 #ex1.py
 import matplotlib.pyplot as plt
 import numpy as np
@@ -40,4 +25,3 @@ print("函數 y={0}*x+{1}".format(model.coef_,model.intercept_))
 plt.scatter(x,y)
 plt.plot(x_,y_)
 plt.show()
-```
