@@ -1,7 +1,8 @@
 # Logistic回歸算法
 
 Logistic函數
-$Logistic(t)={1\over{1+e^{-t}}} $
+ $Logistic(t)={1\over{1+e^{-t}}} $
+
 ![img](https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Logistic-curve.svg/640px-Logistic-curve.svg.png)
 是可導的階躍函數。
 
