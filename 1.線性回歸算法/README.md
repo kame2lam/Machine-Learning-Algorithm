@@ -1,8 +1,6 @@
 # 線性回歸分析
-預測值
-```math
-\hat y=w^T x_i +b
-```
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+預測值: \(\hat y=w^T x_i +b\)
  
 損失函數 $L(x)=||\hat y -y||^2_2$
 
