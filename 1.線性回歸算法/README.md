@@ -1,17 +1,16 @@
 # 線性回歸分析
 
-預測值: $\hat y=w^T x_i +b$
+預測值: <!-- $\hat y=w^T x_i +b$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5Chat%20y%3Dw%5ET%20x_i%20%2Bb">
  
-損失函數 $L(x)=||\hat y -y||^2_2$
+損失函數 <!-- $L(x)=||\hat y -y||^2_2$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=L(x)%3D%7C%7C%5Chat%20y%20-y%7C%7C%5E2_2">
 
-優化方法 $\min\limits_{w,b} ||\hat y-y||^2_2$
+優化方法 <!-- $\min\limits_{w,b} ||\hat y-y||^2_2$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5Cmin%5Climits_%7Bw%2Cb%7D%20%7C%7C%5Chat%20y-y%7C%7C%5E2_2">
 
 $w_新=w_舊-學習率*損失值$
 
-L1范數: 
-$$|| x||_1=\sum_{i=1}^{n}|x_i|$$
+L1范數: <!-- $||x||_1=\sum_{i=1}^{n}|x_i|$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%7C%7Cx%7C%7C_1%3D%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%7Cx_i%7C">
 
-L2范數: $ ||x||_2=\sqrt{\sum_{i=1}^{n}x_i^2}$
+L2范數: <!-- $ ||x||_2=\sqrt{\sum_{i=1}^{n}x_i^2}$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%7C%7Cx%7C%7C_2%3D%5Csqrt%7B%5Csum_%7Bi%3D1%7D%5E%7Bn%7Dx_i%5E2%7D">
 
 ```python
 #ch1-1.py
