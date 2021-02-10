@@ -1,7 +1,9 @@
 # 線性回歸分析
-
-預測值 $\hat y=w^T x_i +b$,
-
+預測值
+```math
+\hat y=w^T x_i +b
+```
+ 
 損失函數 $L(x)=||\hat y -y||^2_2$
 
 優化方法 $\min\limits_{w,b} ||\hat y-y||^2_2$
@@ -13,7 +15,7 @@ L1范數 $||x||_1=\sum\limits_{i=1}^{n}|x_i|$
 L2范數 $||x||_2=\sqrt{\sum\limits_{i=1}^{n}x_i^2}$
 
 ```python
-#ex1.py
+#ch1-1.py
 import matplotlib.pyplot as plt
 import numpy as np
 #生成數據集

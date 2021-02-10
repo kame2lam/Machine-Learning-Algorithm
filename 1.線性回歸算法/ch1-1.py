@@ -1,4 +1,3 @@
-#ex1.py
 import matplotlib.pyplot as plt
 import numpy as np
 #生成數據集
