@@ -1,5 +1,5 @@
 # 線性回歸分析
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+<script src="https://cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 預測值: \(\hat y=w^T x_i +b\)
  
 損失函數 $L(x)=||\hat y -y||^2_2$
