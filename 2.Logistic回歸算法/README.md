@@ -1,17 +1,17 @@
 # Logistic回歸算法
 
 Logistic函數
- $Logistic(t)={1\over{1+e^{-t}}} $
+ <!-- $Logistic(t)={1\over{1+e^{-t}}} $ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=Logistic(t)%3D%7B1%5Cover%7B1%2Be%5E%7B-t%7D%7D%7D">
 
 ![img](https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Logistic-curve.svg/640px-Logistic-curve.svg.png)
 
 是可導的階躍函數。
 
 線性方程表達式,
-$H(x)={1\over{1+e^{-{w^T x_i+b}}}}$
+<!-- $H(x)={1\over{1+e^{-{w^T x_i+b}}}}$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=H(x)%3D%7B1%5Cover%7B1%2Be%5E%7B-%7Bw%5ET%20x_i%2Bb%7D%7D%7D%7D">
 
 損失函數,
-$L(x)=-y \log H(x)-(1-y)\log(1-H(x))$
+<!-- $L(x)=-y \log H(x)-(1-y)\log(1-H(x))$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=L(x)%3D-y%20%5Clog%20H(x)-(1-y)%5Clog(1-H(x))">
 
 |||
 |--|--|
@@ -23,15 +23,15 @@ $L(x)=-y \log H(x)-(1-y)\log(1-H(x))$
 
 1. LinearRegression類
 
-損失函數 $L(x)=\min\limits_{w}||Xw-y||_2^2$
+損失函數: <!-- $L(x)=\min\limits_{w}||Xw-y||_2^2$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=L(x)%3D%5Cmin%5Climits_%7Bw%7D%7C%7CXw-y%7C%7C_2%5E2">
 
 2. Ridge類
 
-損失函數 $L(x)=\min\limits_{w}||Xw-y||_2^2+a ||w||_2^2$
+損失函數: <!-- $L(x)=\min\limits_{w}||Xw-y||_2^2+a ||w||_2^2$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=L(x)%3D%5Cmin%5Climits_%7Bw%7D%7C%7CXw-y%7C%7C_2%5E2%2Ba%20%7C%7Cw%7C%7C_2%5E2">
 
 3. Lasso類
 
-損失函數 $L(x)=\min\limits_w {1\over 2n}||Xw-y||^2_2+a||w||_1$
+損失函數: <!-- $L(x)=\min\limits_w {1\over 2n}||Xw-y||^2_2+a||w||_1$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=L(x)%3D%5Cmin%5Climits_w%20%7B1%5Cover%202n%7D%7C%7CXw-y%7C%7C%5E2_2%2Ba%7C%7Cw%7C%7C_1">
 
 ```python
 #ch2-1.py
