@@ -1,0 +1,20 @@
+import numpy as np
+from sklearn.impute import SimpleImputer
+#缺失值補全策略,均值(mean),中位數(median),常數(constant),最高頻數(most_frequent)
+imp_mean = SimpleImputer(missing_values=np.nan, strategy='mean')
+imp_median = SimpleImputer(missing_values=np.nan, strategy='median')
+imp_constant = SimpleImputer(missing_values=np.nan, strategy='constant')
+imp_most_frequent = SimpleImputer(missing_values=np.nan, strategy='most_frequent')
+X = [[13,22],[5,3],[7, np.nan],[np.nan,5],[3,7]]
+imp_mean.fit(X)
+imp_median.fit(X)
+imp_constant.fit(X)
+imp_most_frequent.fit(X)
+print('均值處理,結果如下:')
+print(imp_mean.transform(X))
+print('中位數處理,結果如下:')
+print(imp_median.transform(X))
+print('常數處理,結果如下:')
+print(imp_constant.transform(X))
+print('最高頻數處理,結果如下:')
+print(imp_most_frequent.transform(X))

@@ -1,4 +1,3 @@
-#ch4-1.py
 from sklearn.datasets import load_iris
 #載入樸素貝葉斯分類算法
 from sklearn.naive_bayes import MultinomialNB

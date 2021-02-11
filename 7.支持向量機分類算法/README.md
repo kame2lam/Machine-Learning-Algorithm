@@ -28,6 +28,7 @@ Kame Lam, [10.02.21 15:49]
 * NuSVR類：與SVR類非常相似，但可通過參數“nu”設置支持向量的數量。
 * OneClassSVM類：用支援向量機演算法解決無監督學習的異常點檢測問題。
 
+ch7-1.py
 ```python
 from sklearn.datasets import load_iris 
 #從Scikit-Learn庫導入支援向量機演算法 

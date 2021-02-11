@@ -1,4 +1,3 @@
-#ch7-1.py
 #導入繪圖庫 
 import matplotlib.pyplot as plt 
 #從Scikit-Learn庫導入聚類模型中的K-means聚類演算法 

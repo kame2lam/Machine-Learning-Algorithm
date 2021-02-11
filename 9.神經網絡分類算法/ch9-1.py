@@ -1,4 +1,3 @@
-#ch8.1.py
 from sklearn.datasets import load_iris 
 #從Scikit-Learn庫導入神經網路模型中的神經網路分類演算法 
 from sklearn.neural_network import MLPClassifier 

@@ -17,8 +17,8 @@
 2) 根據待預測樣本所包含的特徵,對不同類分別進行後驗概率計算。如總的特徵有A,B,C三項,但待測樣本只包含A,C兩項,那y1後驗概率的計算方法就為P(y1)P(A|y1)P(B|y1)。
 3) 比較y1,y2,...,yn的後驗概率,哪個的概率值最大就將其作為預測值輸出。
 
+ch5-1.py
 ```python
-#ch4-1.py
 from sklearn.datasets import load_iris
 #載入樸素貝葉斯分類算法
 from sklearn.naive_bayes import MultinomialNB

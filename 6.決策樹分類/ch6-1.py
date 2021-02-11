@@ -1,4 +1,3 @@
-#ch5-1.py
 from sklearn.datasets import load_iris 
 #從Scikit-Learn庫導入決策樹模型中的決策樹分類演算法 
 from sklearn.tree import DecisionTreeClassifier 

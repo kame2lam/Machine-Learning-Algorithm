@@ -17,8 +17,8 @@
 
 在Scikit-Learn庫中，基於神經網路這一大類的演算法模型的相關類庫都在sklearn. neural_network包中，這個包只有三種演算法API。神經網路演算法在Scikit-Learn庫中被稱為多層感知機（Multi-layer Perceptron）演算法，這裡可以簡單地認為二者只有叫法上的區別，縮寫為MLP。神經網路演算法可以完成多種任務，前面所介紹的用於解決分類問題的神經網路分類演算法對應的API為MLPClassifier，除此之外，神經網路演算法也可以用來解決回歸問題，對應的API為MLPRegressor。該包還有一種演算法，為基於Bernoulli Restricted Boltzmann Machine模型的神經網路分類演算法類BernoulliRBM。
 
+ch9-1.py
 ```python 
-#ch8.1.py
 from sklearn.datasets import load_iris 
 #從Scikit-Learn庫導入神經網路模型中的神經網路分類演算法 
 from sklearn.neural_network import MLPClassifier 

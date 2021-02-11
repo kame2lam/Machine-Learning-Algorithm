@@ -23,8 +23,8 @@ K-means演算法的具體分五步：
 ● AffinityPropagation類：使用Affinity Propagation聚類演算法，簡稱AP演算法，聚類過程是一個“不斷合併同類項”的過程，用類似於歸納法的思想方法完成聚類，這種方法被稱為“層次聚類”。
 本文所介紹的K-means聚類演算法可以通過KMeans類調用，K-means演算法中的“K”，也即聚類得到的簇的個數可以通過參數“n_clusters”設置，默認為8。使用方法具體如下：
  
+ch8-1.py
 ```python
-#ch7-1.py
 #導入繪圖庫 
 import matplotlib.pyplot as plt 
 #從Scikit-Learn庫導入聚類模型中的K-means聚類演算法 

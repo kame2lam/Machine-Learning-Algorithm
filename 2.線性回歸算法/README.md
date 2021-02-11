@@ -12,8 +12,8 @@ L1范數: <!-- $||x||_1=\sum_{i=1}^{n}|x_i|$ --> <img style="transform: translat
 
 L2范數: <!-- $ ||x||_2=\sqrt{\sum_{i=1}^{n}x_i^2}$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%7C%7Cx%7C%7C_2%3D%5Csqrt%7B%5Csum_%7Bi%3D1%7D%5E%7Bn%7Dx_i%5E2%7D">
 
+ch2-1.py
 ```python
-#ch1-1.py
 import matplotlib.pyplot as plt
 import numpy as np
 #生成數據集

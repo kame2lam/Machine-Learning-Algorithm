@@ -32,8 +32,8 @@ D是基尼指數計算的集合。
 * ExtraTreeClassifier類：這也是一款決策樹分類演算法，但與前面經典的決策樹分類演算法不同，該演算法在決策條件選擇環節加入了隨機性，不是從全部的特徵維度集中選取，而是首先隨機抽取n個特徵維度來構成新的集合，然後再在新集合中選取決策條件。n的值通過參數“max_features”設置，當max_features設置為1時，相當於決策條件完全通過隨機抽取得到。
 * ExtraTreeRegressor類：與ExtraTreeClassifier類似，同樣在決策條件選擇環境加入隨機性，用於解決回歸問題。
 
+ch6-1.py
 ```python
-#ch5-1.py
 from sklearn.datasets import load_iris 
 #從Scikit-Learn庫導入決策樹模型中的決策樹分類演算法 
 from sklearn.tree import DecisionTreeClassifier 

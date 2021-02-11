@@ -18,8 +18,8 @@ KNN分類算法的思路:
 度量兩點之間的直線距離,歐幾里得矩離
 <!-- $d_2(x,y)=\sqrt{\sum_{i=1}^n(x_i-y_i)^2}$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=d_2(x%2Cy)%3D%5Csqrt%7B%5Csum_%7Bi%3D1%7D%5En(x_i-y_i)%5E2%7D">
 
+ch4-1.py
 ```python
-#ch3-1.py
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.datasets import load_iris
 #載入鳶花數據集

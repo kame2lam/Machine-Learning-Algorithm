@@ -33,8 +33,8 @@ Logistic函數
 
 損失函數: <!-- $L(x)=\min\limits_w {1\over 2n}||Xw-y||^2_2+a||w||_1$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=L(x)%3D%5Cmin%5Climits_w%20%7B1%5Cover%202n%7D%7C%7CXw-y%7C%7C%5E2_2%2Ba%7C%7Cw%7C%7C_1">
 
+ch3-1.py
 ```python
-#ch2-1.py
 from sklearn.linear_model import LogisticRegression
 #Scikit-Learnh 的鳶尾花類數據集,是一個分類問題的數據集
 from sklearn.datasets import load_iris
