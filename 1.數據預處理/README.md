@@ -120,3 +120,33 @@ binarizer=preprocessing.Binarizer(threshold=1)
 X_binarizer=binarizer.fit_transform(X)
 print(X_binarizer)
 ```
+
+* 分位數變換
+
+以統計學中比較常用的四分位數為例,將所有數值由小到大排列並分成四等份。
+分位數變換優點:
+1.它對樣本中的隨機擾動項不需要做任何分佈的假定，所以模型具有很強的穩健性。
+2.分位元數變換無須一個連接函數描述因變數的均值和方差的相互關係，因此分位元數變換使模型擁有比較好的彈性性質。
+3.由於分位數回歸是對所有分位數進行回歸，所以對資料中出現的異常點具有耐抗性。
+4.不同于普通的樣本分佈，分位元數變換之後的資料在模型中對因變數具有單調變換性。
+5.分位元數變換之後的資料具有在大樣本理論下的漸進優良性。
+但是，正是由於其將樣本資料關係進行了變換，所以扭曲了特徵內部及其之間的相關性和距離。
+
+ch1-6.py
+```python
+from sklearn import preprocessing
+import numpy as np
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+#載入鳶花數據集
+iris=load_iris()
+X, y=iris.data, iris.target
+#將鳶花數據集分隔為訓練集和測試集
+X_train, X_test, y_train, y_test= train_test_split(X, y, random_state=0)
+#初始化分位數轉化器
+quantile_transformer = preprocessing.QuantileTransformer(random_state=0)
+X_train_trans=quantile_transformer.fit_transform(X_train)
+X_test_trans=quantile_transformer.fit_transform(X_test)
+print('被轉化訓練集的五分位數')
+print(np.percentile(X_train[:,0],[0,5,50,75,100]))
+```
